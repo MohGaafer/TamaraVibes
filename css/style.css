@@ -72,6 +72,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background-color: var(--clr-dark);
 }
 
 body {
@@ -82,6 +83,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 img {
@@ -1318,6 +1326,9 @@ ul {
 
 .about-image-column {
   position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .about-img-wrapper {
@@ -1325,18 +1336,27 @@ ul {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 4px solid #ffffff;
+  background-color: var(--clr-card-bg);
+}
+
+.about-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .about-badge-card {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: -15px;
+  right: 10px;
   background-color: var(--clr-dark);
   color: #ffffff;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
-  max-width: 220px;
+  max-width: 230px;
+  z-index: 5;
 }
 
 .about-badge-card h4 {
@@ -1503,11 +1523,13 @@ ul {
 
 /* --- FOOTER --- */
 .footer {
+  flex-shrink: 0;
   background-color: var(--clr-dark);
   color: #A39BAE;
   padding-top: 5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 .footer-grid {
@@ -1563,6 +1585,21 @@ ul {
 
 .footer-links a:hover {
   color: #ffffff;
+}
+
+.footer-whatsapp-link {
+  color: #25D366 !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.footer-whatsapp-link:hover {
+  color: #20BA5A !important;
+  transform: translateX(3px);
 }
 
 .footer-bottom {
@@ -1848,10 +1885,36 @@ ul {
     margin: 0 auto;
   }
   
-  .hero-cta-group {
-    justify-content: center;
+/* Intermediate Tablet / Medium Window Responsiveness */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
-  
+
+  .about-image-column {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .about-badge-card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: -1.75rem auto 1.5rem auto;
+    max-width: 88%;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .about-badge-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1910,6 +1973,63 @@ ul {
   .category-card[data-category="homedecor"] .category-img-wrapper img {
     object-position: 50% 15%;
   }
+
+  /* Centered 2-Column Mobile Footer Layout */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2.5rem 1.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand .brand-logo {
+    justify-content: center;
+  }
+
+  .footer-desc {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links li {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1951,9 +2071,18 @@ ul {
   }
 
   .trust-grid,
-  .why-grid,
-  .footer-grid {
+  .why-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 2rem 0.75rem;
+  }
+
+  .footer-col {
+    padding-left: 0.25rem;
   }
   
   .floating-badge {
@@ -2004,18 +2133,28 @@ ul {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 9999;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
   opacity: 0;
   visibility: hidden;
-  transition: all var(--transition-normal);
+  pointer-events: none;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.quickview-modal-backdrop:not(.active) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .quickview-modal-backdrop.active {
-  opacity: 1;
-  visibility: visible;
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
 
 .quickview-modal-card {

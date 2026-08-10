@@ -653,10 +653,11 @@ const customerReviews = [
   }
 ];
 
-// SOCIAL MEDIA LINKS
+// SOCIAL MEDIA LINKS & CONTACT
 const socialLinks = {
   facebook: "https://www.facebook.com/tamtamvibes",
   pinterest: "https://www.pinterest.com/tamaravibes",
   instagram: "https://www.instagram.com/tamtama.vibes",
-  youtube: "https://www.youtube.com/@Tamara-Vibes"
+  youtube: "https://www.youtube.com/@Tamara-Vibes",
+  whatsapp: "https://wa.me/17326308588"
 };
