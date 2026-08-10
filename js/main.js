@@ -374,6 +374,15 @@ function initThemeToggle() {
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('tamaravibes_theme', theme);
+
+    // Update mobile theme-color meta tag for seamless UI matching
+    let metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (!metaThemeColor) {
+      metaThemeColor = document.createElement('meta');
+      metaThemeColor.name = 'theme-color';
+      document.head.appendChild(metaThemeColor);
+    }
+    metaThemeColor.setAttribute('content', theme === 'dark' ? '#121019' : '#1E1926');
   }
 
   // Check saved theme from localStorage or system preference
