@@ -48,7 +48,7 @@ const categories = [
   {
     id: "tshirts",
     name: "T-shirts",
-    description: "Graphic ultra-cotton tees featuring bold anime artwork, humor & pop culture.",
+    description: "Premium cotton graphic t-shirts designed for everyday style, comfort, and unique creative expression.",
     image: "assets/images/cat_tshirts.jpg",
     icon: "shirt"
   },
@@ -76,7 +76,7 @@ const categories = [
   {
     id: "accessories",
     name: "Accessories",
-    description: "Waterproof vinyl stickers, keychains, phone grips & unique daily finds.",
+    description: "Protective cases for phones, MacBooks, AirPods, and a curated collection of creative daily accessories.",
     image: "assets/images/cat_accessories.jpg",
     icon: "tag"
   },
@@ -657,5 +657,6 @@ const customerReviews = [
 const socialLinks = {
   facebook: "https://www.facebook.com/tamtamvibes",
   pinterest: "https://www.pinterest.com/tamaravibes",
-  instagram: "https://www.instagram.com/bymohamedgaafer"
+  instagram: "https://www.instagram.com/tamtama.vibes",
+  youtube: "https://www.youtube.com/@Tamara-Vibes"
 };
