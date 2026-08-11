@@ -527,50 +527,47 @@ function openQuickViewModal(productId) {
   closeQuickViewModal();
 
   const modal = document.createElement('div');
-  modal.className = 'quickview-modal-backdrop active';
+  modal.className = 'modal-backdrop active';
   modal.id = 'quickViewModal';
   modal.setAttribute('role', 'dialog');
   modal.setAttribute('aria-modal', 'true');
 
   modal.innerHTML = `
-    <div class="quickview-modal-card" id="quickViewCard">
-      <button class="quickview-close-btn" onclick="closeQuickViewModal()" aria-label="Close product modal">
+    <div class="modal-card" id="quickViewCard">
+      <button class="modal-close-btn" onclick="closeQuickViewModal()" aria-label="Close product modal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
-      <div class="quickview-grid">
-        <div class="quickview-img-column">
-          <div class="quickview-img-wrapper">
-            <img src="${product.image}" alt="${product.title}">
-          </div>
+
+      <div class="modal-img-container">
+        <img src="${product.image}" alt="${product.title}">
+      </div>
+
+      <div class="modal-body">
+        <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+          ${product.badge ? `<span class="product-badge" style="position: static;">${product.badge}</span>` : ''}
+          <span class="product-platform-tag platform-etsy" style="position: static;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>
+            Etsy Listing
+          </span>
         </div>
 
-        <div class="quickview-details-column">
-          <div class="quickview-header-tags">
-            ${product.badge ? `<span class="product-badge" style="position: static;">${product.badge}</span>` : ''}
-            <span class="product-platform-tag platform-etsy" style="position: static;">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>
-              Etsy Listing
-            </span>
-          </div>
+        <span class="modal-tag">${product.category}</span>
+        <h2 class="modal-title">${product.title}</h2>
+        
+        <div class="modal-price">
+          <span class="product-price ${product.originalPrice ? 'sale-price' : ''}">${product.price}</span>
+          ${product.originalPrice ? `<span class="product-original-price" style="margin-left: 0.5rem; font-size: 1rem; text-decoration: line-through; color: var(--clr-text-muted);">${product.originalPrice}</span>` : ''}
+        </div>
 
-          <span class="product-category" style="margin-top: 0.75rem; display: block;">${product.category}</span>
-          <h2 class="quickview-title">${product.title}</h2>
-          
-          <div class="quickview-price-box">
-            <span class="product-price ${product.originalPrice ? 'sale-price' : ''}">${product.price}</span>
-            ${product.originalPrice ? `<span class="product-original-price">${product.originalPrice}</span>` : ''}
-          </div>
+        <p class="modal-desc">${product.description}</p>
 
-          <p class="quickview-description">${product.description}</p>
-
-          <div class="quickview-actions">
-            <a href="${product.url}" target="_blank" rel="noopener noreferrer" class="btn btn-etsy quickview-buy-btn">
-              Buy on Etsy 🛍️
-            </a>
-            <button onclick="closeQuickViewModal()" class="btn btn-secondary quickview-continue-btn">
-              Continue Shopping
-            </button>
-          </div>
+        <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
+          <a href="${product.url}" target="_blank" rel="noopener noreferrer" class="btn btn-etsy" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">
+            Buy on Etsy 🛍️
+          </a>
+          <button onclick="closeQuickViewModal()" class="btn btn-secondary" style="padding: 0.75rem 1.25rem; font-size: 0.95rem;">
+            Continue Shopping
+          </button>
         </div>
       </div>
     </div>
