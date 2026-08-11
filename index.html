@@ -107,15 +107,20 @@
           <div class="hero-3d reveal">
             <model-viewer
               src="models/mug.glb"
+              loading="eager"
+              reveal="auto"
               alt="TamaraVibes Mug"
               ar
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
+              interaction-prompt="none"
               tone-mapping="neutral"
               shadow-intensity="0.28"
               auto-rotate
-              camera-orbit="348.9deg 87.65deg 0.7009m"
-              field-of-view="30deg"
+              camera-orbit="348.9deg 75deg 0.76m"
+              field-of-view="32deg"
+              min-camera-orbit="auto 0deg auto"
+              max-camera-orbit="auto 180deg auto"
               disable-zoom
               disable-pan
               style="width: 100%; height: 100%;"
