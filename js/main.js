@@ -601,3 +601,24 @@ function initQuickViewModal() {
     }
   });
 }
+
+/* ==========================================================================
+   14. 3D MODEL SWITCHER (MUG & T-SHIRT)
+   ========================================================================== */
+function switchModel(modelType) {
+  const viewer = document.getElementById('mainModelViewer');
+  const btnMug = document.getElementById('modelBtnMug');
+  const btnTshirt = document.getElementById('modelBtnTshirt');
+
+  if (!viewer) return;
+
+  if (modelType === 'mug') {
+    viewer.src = 'models/mug.glb';
+    if (btnMug) btnMug.classList.add('active');
+    if (btnTshirt) btnTshirt.classList.remove('active');
+  } else if (modelType === 'tshirt') {
+    viewer.src = 'models/tshirt.glb';
+    if (btnTshirt) btnTshirt.classList.add('active');
+    if (btnMug) btnMug.classList.remove('active');
+  }
+}

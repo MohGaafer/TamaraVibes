@@ -22,8 +22,15 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Three.js & Model-Viewer 3D Engines -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
   <!-- JavaScript Modules (Deferred) -->
   <script src="js/products.js" defer></script>
+  <script src="js/3d-viewer.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -97,27 +104,30 @@
             </div>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="hero-image-wrapper">
-              <img src="assets/images/hero_showcase.jpg" alt="TamaraVibes creative products featuring ceramic mugs, graphic t-shirts, and storybooks" width="600" height="400">
-              
-              <!-- Floating Badges -->
-              <div class="floating-badge badge-top-left">
-                <div class="floating-badge-icon">🛍️</div>
-                <div class="floating-badge-text">
-                  <strong>Etsy Verified Shop</strong>
-                  <span>Top Rated Quality</span>
-                </div>
+          <div class="hero-3d reveal">
+            <model-viewer
+              src="models/mug.glb"
+              alt="TamaraVibes Mug"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              tone-mapping="neutral"
+              shadow-intensity="0.28"
+              auto-rotate
+              camera-orbit="348.9deg 87.65deg 0.7009m"
+              field-of-view="30deg"
+              disable-zoom
+              disable-pan
+              style="width: 100%; height: 100%;"
+              id="mainModelViewer"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
               </div>
-
-              <div class="floating-badge badge-bottom-right">
-                <div class="floating-badge-icon">📚</div>
-                <div class="floating-badge-text">
-                  <strong>Amazon KDP Books</strong>
-                  <span>Illustrated Children's Stories</span>
-                </div>
-              </div>
-            </div>
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
+            </model-viewer>
           </div>
         </div>
       </div>
