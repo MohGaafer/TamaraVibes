@@ -2468,6 +2468,10 @@ model-viewer {
   --poster-color: transparent;
 }
 
+#ar-button {
+  display: none !important;
+}
+
 /* Loader Overlay */
 .viewer-loader {
   position: absolute;
