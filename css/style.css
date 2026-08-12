@@ -714,6 +714,95 @@ ul {
   overflow: visible;
 }
 
+/* --- 3D MODEL DRAG & ROTATE INTERACTIVE BUBBLE --- */
+.drag-rotate-bubble {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.05rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 119, 87, 0.28);
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 24px rgba(30, 25, 38, 0.12), 0 2px 6px rgba(217, 119, 87, 0.12);
+  color: var(--clr-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: bubbleFloat 3s ease-in-out infinite alternate;
+}
+
+.drag-rotate-bubble .bubble-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-primary);
+  animation: iconPulseRotate 4s ease-in-out infinite;
+}
+
+.drag-rotate-bubble .bubble-text {
+  font-family: var(--font-body);
+  color: var(--clr-dark);
+}
+
+.drag-rotate-bubble.is-hidden {
+  opacity: 0 !important;
+  transform: translateX(-50%) translateY(8px) scale(0.92) !important;
+  pointer-events: none !important;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(1px);
+  }
+}
+
+@keyframes iconPulseRotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Dark mode styling for Drag & Rotate Bubble */
+[data-theme="dark"] .drag-rotate-bubble {
+  background: rgba(34, 30, 46, 0.92);
+  border-color: rgba(232, 172, 132, 0.35);
+  color: #F5EEF8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .drag-rotate-bubble .bubble-icon-wrap {
+  color: var(--clr-accent);
+}
+
+[data-theme="dark"] .drag-rotate-bubble .bubble-text {
+  color: #F5EEF8;
+}
+
 .hero-content {
   max-width: 620px;
   margin: 0;
@@ -2330,8 +2419,8 @@ ul {
   }
 
   .hero-3d {
-    min-height: 360px;
-    height: 360px;
+    min-height: 400px;
+    height: 400px;
   }
 
   .about-grid {
@@ -2634,8 +2723,8 @@ ul {
   }
 
   .hero-3d {
-    min-height: 320px !important;
-    height: 320px !important;
+    min-height: 350px !important;
+    height: 350px !important;
   }
 
   /* Mobile Landscape Nav Menu Drawer Spacing & Accessibility */
