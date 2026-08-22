@@ -98,7 +98,98 @@ const categories = [
 
 // ETSY PRODUCTS DATA
 const etsyProducts = [
-  // --- 12 T-SHIRTS ---
+  // --- T-SHIRTS ---
+  {
+    id: "etsy-tshirt-arabic-sarcastic-4555791893",
+    title: "Arabic Typography T-Shirt, Sarcastic Statement Tee, Middle Eastern Streetwear",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_arabic_sarcastic_statement.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555791893/arabic-quote-t-shirt-funny-arabic",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A bold and clever Arabic statement T-shirt featuring expressive Arabic typography and a playful word combination. The phrase translates roughly to “Tied with an elastic among plastic people” — a sarcastic and witty expression about staying yourself while surrounded by fake or superficial people. The bold Arabic lettering gives this shirt a distinctive artistic look, making it a great choice for anyone who loves unique typography, cultural designs, and statement streetwear."
+  },
+  {
+    id: "etsy-tshirt-arabic-quote-4555815192",
+    title: "Arabic Calligraphy Hope Quote T-Shirt, Middle Eastern Typography Tee",
+    category: "tshirts",
+    price: "$22.67+",
+    originalPrice: "$30.23+",
+    image: "assets/images/tshirt_arabic_hope_quote.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555815192/arabic-quote-t-shirt-arabic-calligraphy",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "“ما ضاقت إلا لتفرج”\n\nA meaningful Arabic quote beautifully presented in bold artistic typography. The phrase can be translated as “Hardship comes before relief” or “When things become difficult, relief will follow.” It carries a message of hope, patience, and perseverance — a reminder that difficult moments do not last forever and that better days can come after hardship. The expressive Arabic typography makes this more than just a T-shirt; it is a wearable message of hope with a distinctive Middle Eastern artistic aesthetic."
+  },
+  {
+    id: "etsy-tshirt-arabic-poetry-4555819896",
+    title: "Arabic Calligraphy T-Shirt, Hope Poetry Typography Tee",
+    category: "tshirts",
+    price: "$24.10+",
+    originalPrice: "$32.14+",
+    image: "assets/images/tshirt_arabic_calligraphy_poetry.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555819896/arabic-poetry-t-shirt-arabic-calligraphy",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "“ضاقت فلما استحكمت حلقاتها فرجت”\n\nA powerful Arabic poetic expression transformed into a striking piece of wearable typography. The verse means approximately: “Things became unbearably tight, and when the hardship reached its peak, relief came.” It is a timeless message about hope, perseverance, and finding relief after difficult times. The bold Arabic calligraphy gives the shirt an artistic and literary character, making it especially appealing to people who appreciate Arabic poetry, typography, calligraphy, and Middle Eastern visual culture."
+  },
+  {
+    id: "etsy-tshirt-egyptian-goddess-4555885127",
+    title: "Egyptian Goddess T-Shirt, Ancient Egypt Art Tee, Mythology Pharaoh Style Shirt",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_egyptian_goddess.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555885127/egyptian-goddess-t-shirt-ancient-egypt",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Step into the timeless beauty and mystery of Ancient Egypt with this elegant Egyptian-inspired T-shirt. Featuring a striking golden illustration of a regal Egyptian female figure surrounded by wings, celestial symbols, and ornamental details, this design combines ancient Egyptian aesthetics with a modern artistic style. A beautiful statement piece for anyone fascinated by Egyptian history, mythology, symbolism, and ancient civilizations."
+  },
+  {
+    id: "etsy-tshirt-egyptian-falcon-4555904414",
+    title: "Egyptian Falcon Horus T-Shirt, Ancient Mythology Graphic Tee",
+    category: "tshirts",
+    price: "$23.22+",
+    originalPrice: "$30.96+",
+    image: "assets/images/tshirt_egyptian_falcon.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555904414/egyptian-falcon-t-shirt-horus-inspired",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Bring the powerful symbolism of Ancient Egypt to your wardrobe with this striking Egyptian falcon T-shirt. The design features a dramatic black and gold falcon-inspired figure surrounded by ancient Egyptian symbols, celestial elements, and an Eye of Horus-inspired motif. Inspired by the powerful imagery associated with Horus and ancient Egyptian falcon symbolism, this shirt is perfect for anyone drawn to Egyptian mythology, history, and ancient art."
+  },
+  {
+    id: "etsy-tshirt-eye-of-horus-4555911863",
+    title: "Eye of Horus T Shirt, Winged Egyptian Symbol Tee, Ancient Egypt Mythology Art",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_eye_of_horus.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555911863/eye-of-horus-t-shirt-egyptian-symbol",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A powerful interpretation of one of the most recognizable symbols associated with Ancient Egypt. This artistic design combines the Eye of Horus-inspired symbol with expansive wings, radiant sun-like details, and elegant golden linework to create a bold mystical aesthetic. Perfect for anyone fascinated by Egyptian symbolism, ancient mythology, sacred art, and the visual language of Ancient Egypt."
+  },
+  {
+    id: "etsy-tshirt-egyptian-sun-4555917227",
+    title: "Egyptian Pyramid Sunset T-Shirt, Ancient Art Landscape Tee",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_egyptian_pyramid_sunset.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555917227/egyptian-sun-t-shirt-pyramid-sunset",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A dreamy interpretation of the Egyptian landscape featuring a glowing sun rising or setting behind a pyramid, surrounded by intricate celestial and ornamental details. The circular composition combines pyramid imagery, golden sunlight, and Ancient Egyptian-inspired artwork to create a mystical and artistic statement design. A great choice for anyone fascinated by Egypt, pyramids, ancient civilizations, desert landscapes, and timeless Egyptian aesthetics."
+  },
   {
     id: "etsy-tshirt-zenitsu-4372921118",
     title: "Zenitsu Demon Slayer T-Shirt",
@@ -256,7 +347,46 @@ const etsyProducts = [
     description: "This Akaza - Demon Slayer - 3rd Moon T-Shirt exudes a blend of fierce and mysterious vibes, perfect for fans of the anime and manga series. With its soft ring-spun cotton fabric and classic fit, it offers versatility and comfort for everyday wear. Ideal for adult anime enthusiasts, this T-Shirt is a great addition to any collection and a perfect gift for birthdays, holidays, and anime conventions."
   },
 
-  // --- 12 MUGS ---
+  // --- MUGS ---
+  {
+    id: "etsy-mug-no-internet-dino-4555781859",
+    title: "No Internet Dinosaur Mug, Western Desert Scene, Funny Tech Gift (11oz, 15oz)",
+    category: "mugs",
+    price: "$17.23+",
+    originalPrice: "$22.98+",
+    image: "assets/images/mug_no_internet_dinosaur.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555781859/no-internet-dinosaur-mug-funny-dino",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "No Internet. No Problem.\n\nBring some prehistoric attitude to your coffee break with this funny No Internet Dinosaur Mug featuring a minimalist western desert scene with a dinosaur, cacti, and mountains.\n\nPerfect for anyone who loves dinosaurs, western vibes, desert landscapes, or simply wishes they could escape the internet for a while. The unique combination of dinosaur + western desert + “No Internet” humor makes this mug a fun choice for everyday coffee, tea, or hot chocolate."
+  },
+  {
+    id: "etsy-mug-egyptian-hieroglyphics-4555867538",
+    title: "Egyptian Hieroglyphics Mug, Ancient Egypt Coffee Cup, Archaeology Lover Gift",
+    category: "mugs",
+    price: "$17.82+",
+    originalPrice: "$23.76+",
+    image: "assets/images/mug_egyptian_hieroglyphics.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555867538/egyptian-hieroglyphics-mug-ancient-egypt",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Bring the mystery and beauty of Ancient Egypt to your coffee break with this Egyptian Hieroglyphics Mug.\n\nThe design features a collection of ancient Egyptian-inspired hieroglyphic symbols, birds, animals, figures, and traditional Egyptian motifs arranged in vertical columns for a distinctive archaeological aesthetic."
+  },
+  {
+    id: "etsy-mug-funny-goose-4555797454",
+    title: "Funny Goose Mug, Sarcastic Office Humor Coffee Cup",
+    category: "mugs",
+    price: "$19.84",
+    originalPrice: "$26.45",
+    image: "assets/images/mug_funny_goose_email.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555797454/funny-goose-mug-i-hope-this-email-finds",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Make your inbox a little more entertaining with this hilarious goose mug featuring the phrase “I Hope This Email Finds You Before I Do.”\n\nPerfect for anyone who has ever sent—or received—one too many work emails. The funny goose illustration and sarcastic office humor make this mug a great conversation starter at home, in the office, or at your desk."
+  },
   {
     id: "etsy-mug-stitch-4520600198",
     title: "Stitch Character Mug | Blue Ceramic Coffee Tea Cup (11 oz or 15 oz)",
@@ -513,8 +643,29 @@ const etsyProducts = [
   }
 ];
 
-// AMAZON KDP BOOKS DATA
+// AMAZON PUBLICATIONS DATA
 const amazonBooks = [
+  {
+    id: "book-dinosaurs-for-kids",
+    asin: "B0HG54N9M9",
+    title: "Dinosaurs for Kids: A Colorful Journey Through the Prehistoric World",
+    subtitle: "Amazing Dinosaurs, Fossils, Eggs, Habitats, and Extinction",
+    author: "Tamara Vibes",
+    description: "Travel back millions of years and explore the prehistoric world! Packed with vibrant illustrations, fascinating facts, simple explanations, and interactive activities, young adventurers will discover iconic dinosaurs, prehistoric habitats, fossils, dinosaur eggs, and the story of how paleontology uncovers Earth's ancient past.",
+    cover: "assets/images/book_dinosaurs_for_kids.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HG54N9M9",
+    format: "Paperback / Illustrated Book",
+    ageRange: "Ages 5 – 10 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Discover T-rex, Triceratops, Stegosaurus, Spinosaurus & more",
+      "Explore Triassic, Jurassic & Cretaceous prehistoric periods",
+      "Learn how fossils, eggs, nests & paleontology reveal the past",
+      "Includes fun dinosaur quiz & child-friendly glossary"
+    ]
+  },
   {
     id: "book-abc-alphabet",
     asin: "B0HBLJSJYC",
