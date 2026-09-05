@@ -349,6 +349,71 @@ const etsyProducts = [
 
   // --- MUGS ---
   {
+    id: "etsy-mug-akaza-comic-4563554056",
+    title: "Akaza Ceramic Mug | Anime Comic Panel 11oz",
+    category: "mugs",
+    price: "$18.14",
+    originalPrice: "$24.19",
+    image: "assets/images/mug_akaza_anime_comic_panel.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4563554056/akaza-ceramic-mug-anime-comic-panel-11oz",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "This glossy ceramic mug brings manga to morning routines. Black-and-white panels wrap around the cup like a storyboard, while a single full-color character — Akaza from Demon Slayer — anchors the scene, as if stepping off the page. Hold it during late-night sketching, re-reading marathons, or watch parties; the sharp ink lines and burst of color keep the energy of a climactic arc within reach. It sits naturally among sketchbooks and collected volumes, speaking to those who savor panel flow, character beats, and the quiet thrill of a great reveal. Use it to match the mood of release anniversaries, club meetups, or binge afternoons when you want your coffee to feel like part of the story."
+  },
+  {
+    id: "etsy-mug-luffy-peek-4563542168",
+    title: "Luffy Peek Manga Panel one piece Mug | Ceramic Mug",
+    category: "mugs",
+    price: "$18.16",
+    originalPrice: "$24.21",
+    image: "assets/images/mug_luffy_peek_manga.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4563542168/manga-panel-luffy-peek-mug-ceramic-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "This glossy ceramic mug brings playful energy to your morning routine. A wraparound collage of black-and-white manga panels forms a lively backdrop, while a bold, full-color character peeks over the rim—grinning and ready to kickstart your day. The comfortable C-handle and shiny finish make it easy to hold and admire. Durable, vibrant printing keeps the artwork crisp wash after wash, so fans can enjoy the story-driven design with every sip. It’s a cozy companion for quiet reading sessions, late-night sketching, or when you need a little adventurous spirit at your desk."
+  },
+  {
+    id: "etsy-mug-goku-dragon-4563524045",
+    title: "Goko Dragon Fighter Manga Collage Mug | Ceramic Coffee Cup",
+    category: "mugs",
+    price: "$18.09",
+    originalPrice: "$24.12",
+    image: "assets/images/mug_goku_dragon_fighter.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4563524045/goko-dragon-fighter-manga-collage-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Wake up to the crack of pages and the pulse of an epic showdown. This ceramic mug wears a collage of high-contrast manga panels around a full-color warrior—inked lines, speed effects, and a single fierce stare—so every sip feels like a pause between chapters. It settles naturally on a cluttered desk beside sketchbooks, figures, or a late-night snack, bridging the world of marathon reads and morning rituals. The glossy white surface makes the art pop while the comfortable C-handle fits your grip whether you’re sketching, streaming, or rewatching a favorite fight scene. Warm your drink, settle in, and let the cup carry the energy of the story with you."
+  },
+  {
+    id: "etsy-mug-red-spider-4563552402",
+    title: "The Red Spider-man Comic Collage | Ceramic Mug",
+    category: "mugs",
+    price: "$18.16",
+    originalPrice: "$24.21",
+    image: "assets/images/mug_red_spider_comic_collage.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4563552402/the-red-spider-comic-collage-ceramic-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "This glossy ceramic mug brings comic-book energy to your daily coffee break. Black-and-white panels wrap the cup like a storyboard, while flashes of vivid red draw the eye to a single, dramatic motif—the red spider—so every sip feels like stepping into a tiny, animated city. It sits naturally on the desk of someone who sketches late into the night, pores over graphic novels, or collects bold, narrative-driven objects. Use it during morning drawing practice, a focused freelance session, or a weekend comic marathon. The sturdy C-handle and two size options let you choose how much fuel you need, and the durable, lead- and BPA-free ceramic is made for regular use without losing its punchy, high-contrast look."
+  },
+  {
+    id: "etsy-mug-snoopy-comic-4563516003",
+    title: "Snoopy Comic Strip Mug | Ceramic Coffee Cup | 11oz",
+    category: "mugs",
+    price: "$18.16",
+    originalPrice: "$24.21",
+    image: "assets/images/mug_snoopy_comic_strip.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4563516003/snoopy-comic-strip-mug-ceramic-coffee",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Remember those slow mornings when a comic strip could change the mood of an entire day? This glossy ceramic mug brings that gentle, witty feeling to every sip. Black-and-white panels dance around the cup with small pops of color—like rediscovering a favorite comic in the newspaper—inviting quiet smiles between gulps of coffee or tea. The comfortable C-handle and smooth glossy finish sit naturally in your hand, making solo mornings, desk breaks, or lazy weekend breakfasts feel a little softer and more familiar. Durable printing keeps the panels crisp so the story stays bright through daily use. It’s the kind of mug that turns small rituals into comforting pauses."
+  },
+  {
     id: "etsy-mug-no-internet-dino-4555781859",
     title: "No Internet Dinosaur Mug, Western Desert Scene, Funny Tech Gift (11oz, 15oz)",
     category: "mugs",
@@ -645,6 +710,111 @@ const etsyProducts = [
 
 // AMAZON PUBLICATIONS DATA
 const amazonBooks = [
+  {
+    id: "book-matryoshka-chinese-culture",
+    asin: "B0HH94WYYC",
+    title: "Matryoshka Dolls & Chinese Culture Coloring Book for Kids",
+    subtitle: "50 Fun & Detailed Coloring Pages",
+    author: "Tamara Vibes",
+    description: "Discover a fun and creative world where adorable Matryoshka dolls meet the beauty of Chinese culture! Features 50 unique black-and-white coloring pages filled with pandas, dragons, lanterns, pagodas, traditional gardens, and zodiac animals with clean line art perfect for young artists.",
+    cover: "assets/images/book_matryoshka_chinese_culture.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HH94WYYC",
+    format: "Paperback / Coloring Book",
+    ageRange: "Ages 4 – 12 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "50 unique & detailed black-and-white coloring pages",
+      "Adorable Matryoshka dolls paired with traditional Chinese themes",
+      "Includes pandas, dragons, lanterns, pagodas & zodiac animals",
+      "Large illustrations with clean line art for kids ages 4–12"
+    ]
+  },
+  {
+    id: "book-dino-lost-roar",
+    asin: "B0HGTJRG1X",
+    title: "The Little Dinosaur Who Lost His Roar",
+    subtitle: "A Fun and Heartwarming Dinosaur Adventure About Courage, Friendship, and Believing in Yourself",
+    author: "Tamara Vibes",
+    description: "Meet Dino, a lovable little dinosaur who wakes up one morning to a terrible surprise—his roar is gone! On his exciting adventure to get it back, Dino learns that true bravery isn't about being the loudest dinosaur, but about helping others, facing your fears, and believing in yourself.",
+    cover: "assets/images/book_little_dinosaur_lost_roar.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HGTJRG1X",
+    format: "Paperback / Illustrated Book",
+    ageRange: "Ages 4 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Teaches courage, self-confidence & believing in yourself",
+      "Highlights the value of friendship, teamwork & kindness",
+      "Fun, age-appropriate dinosaur facts & colorful artwork",
+      "Heartwarming adventure story for children ages 4 to 8"
+    ]
+  },
+  {
+    id: "book-365-bedtime-stories",
+    asin: "B0HH3T5XBJ",
+    title: "365 Bedtime Stories for Kids",
+    subtitle: "A Year of Magical Adventures, Fun Discoveries, and Heartwarming Tales for Children Ages 1–8",
+    author: "Tamara Vibes",
+    description: "Make bedtime something your child looks forward to! Featuring 365 short, illustrated bedtime stories—one for every single night of the year—children will explore magical forests, outer space, underwater worlds, and animal adventures while discovering gentle lessons of kindness, courage, and friendship.",
+    cover: "assets/images/book_365_bedtime_stories.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HH3T5XBJ",
+    format: "Paperback / Illustrated Treasury",
+    ageRange: "Ages 1 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "365 unique illustrated stories—one for every day of the year",
+      "Short & engaging tales perfect for a cozy nightly reading routine",
+      "Teaches kindness, courage, teamwork, curiosity & empathy",
+      "Beautiful child-friendly artwork for young listeners & early readers"
+    ]
+  },
+  {
+    id: "book-sarahs-little-adventures",
+    asin: "B0HG6TTB3R",
+    title: "Sarah’s Little Adventures",
+    subtitle: "A Curious Girl’s Journey of Discovery",
+    author: "Tamara Vibes",
+    description: "Meet Sarah, a cheerful and curious little explorer! From mysterious forest paths and sparkling waterfalls to friendly animals and hidden treasures, Sarah’s adventures are filled with imagination, friendship, and exciting discoveries that prove even the smallest question can lead to a BIG adventure.",
+    cover: "assets/images/book_sarahs_little_adventures.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HG6TTB3R",
+    format: "Paperback / Illustrated Book",
+    ageRange: "Ages 4 – 12 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Encourages curiosity, bravery & exploring the natural world",
+      "Celebrates friendship, helping others & boundless imagination",
+      "Vibrant illustrations & engaging storytelling for young minds",
+      "Fun adventures & amazing discoveries for kids ages 4 to 12"
+    ]
+  },
+  {
+    id: "book-bear-afraid-of-dark",
+    asin: "B0HGFPZQ3B",
+    title: "The Bear Who Was Afraid of the Dark",
+    subtitle: "A Heartwarming Story About Courage, Friendship, and Facing Your Fears",
+    author: "Tamara Vibes",
+    description: "Meet Benny, a sweet little bear who loves exploring the forest—until the sun goes down! When a tiny firefly named Glow needs help finding her way home, Benny takes a brave step into the nighttime woods with his friend Pip, discovering that the night isn't so scary after all.",
+    cover: "assets/images/book_bear_afraid_of_dark.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HGFPZQ3B",
+    format: "Paperback / Illustrated Book",
+    ageRange: "Ages 4 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "A heartwarming story about overcoming bedtime & nighttime fears",
+      "Teaches courage, empathy, curiosity & helping friends in need",
+      "Beautifully illustrated nighttime forest adventure for kids",
+      "Perfect gentle bedtime story for children ages 4 to 8"
+    ]
+  },
   {
     id: "book-dinosaurs-for-kids",
     asin: "B0HG54N9M9",
