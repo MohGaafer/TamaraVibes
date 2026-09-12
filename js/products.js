@@ -1063,6 +1063,7 @@ const customerReviews = [
 // SOCIAL MEDIA LINKS & CONTACT
 const socialLinks = {
   facebook: "https://www.facebook.com/tamtamvibes",
+  x: "https://x.com/tamara_vibes",
   pinterest: "https://www.pinterest.com/tamaravibes",
   instagram: "https://www.instagram.com/tamtama.vibes",
   youtube: "https://www.youtube.com/@Tamara-Vibes",
