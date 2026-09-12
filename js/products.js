@@ -349,6 +349,71 @@ const etsyProducts = [
 
   // --- MUGS ---
   {
+    id: "etsy-mug-zenitsu-panels-4570706832",
+    title: "Zenitsu Anime Manga Panels Mug | Yellow-Haired Character Comic Collage",
+    category: "mugs",
+    price: "$17.95",
+    originalPrice: "$23.93",
+    image: "assets/images/mug_zenitsu_manga_panels_yellow.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4570706832/zenitsu-anime-manga-panels-mug-yellow",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Wrapped in black-and-white manga panels, this ceramic mug frames a single burst of warm yellow hair—a quiet moment of motion and emotion frozen between sips. It feels like holding a favorite panel from a late-night reading session: focused, a little electric, and oddly comforting. The glossy white surface makes the illustrated drama pop, while the comfortable C-handle and balanced weight let you linger over coffee, tea, or cocoa. Set it on a cluttered desk beside sketchbooks or keep it on your bedside table for slow morning routines and evening wind-downs. For otaku and manga lovers who savor detail, this mug turns everyday drinking into a tiny, personal scene from a story you can carry with you."
+  },
+  {
+    id: "etsy-mug-akaza-art-4572550007",
+    title: "Demon Slayer Akaza Character Art Mug | Black Ceramic Coffee Mug",
+    category: "mugs",
+    price: "$19.04",
+    originalPrice: "$25.39",
+    image: "assets/images/mug_demon_slayer_akaza_art_black.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4572550007/demon-slayer-akaza-character-art-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A dark, atmospheric ceramic mug that brings bold anime energy to your morning ritual. The glossy black surface amplifies the printed design’s saturated purples, blues, and inky contrasts — faces and stylized lettering emerge from shadow like a scene from a midnight cityscape. It feels like holding a small, personal art piece: warm coffee in hand, muted room, and that electric focus before you dive into creative work or late-night reading. For fans of edgy illustration and moody aesthetics, this mug blends function with a collectible vibe that sits naturally on a desk, shelf, or studio table during late sessions and fandom meetups."
+  },
+  {
+    id: "etsy-mug-demon-slayer-characters-4570713460",
+    title: "Demon Slayer Anime Characters Mug | Black Ceramic Coffee Cup",
+    category: "mugs",
+    price: "$19.04",
+    originalPrice: "$25.39",
+    image: "assets/images/mug_demon_slayer_characters_black.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4570713460/demon-slayer-anime-characters-mug-black",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Warm your soul with a nice cuppa out of this black ceramic mug. Customize with cool designs, photos, or logos to make that “aaahhh!” moment even better. It’s BPA and lead-free, microwave and dishwasher-safe, and made of black durable ceramic. The high-quality sublimation printing makes this black ceramic mug the perfect gift for your true coffee, tea, or hot chocolate lover. Please note: There is a subtle variance between the shade of the black color of the mug and the default black background of the print file."
+  },
+  {
+    id: "etsy-mug-zenitsu-attack-4570726372",
+    title: "Zenitsu Lightning Attack Mug | Black Ceramic Coffee Cup",
+    category: "mugs",
+    price: "$19.04",
+    originalPrice: "$25.39",
+    image: "assets/images/mug_zenitsu_lightning_attack.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4570726372/zenitsu-lightning-attack-mug-black",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Morning light cuts across the kitchen. You reach for a dark mug that feels steady in your hand — glossy black, heavy enough to be real, with a cinematic golden blade frozen mid-strike. The illustration channels that electric, anime-moment energy: motion, heat, and a flash of lightning that pulls you into the story before your first sip. This mug belongs on the cluttered desk of someone who replays fight scenes between meetings, on the shelf of late-night sketchers, and in the quiet rituals of collectors who notice the small, dramatic details. It wears the art boldly; the black surface makes the gold sing. Use it for coffee, tea, or to hold pens while you plan your next scene — it’s made to live with you through routines and creative sparks alike."
+  },
+  {
+    id: "etsy-mug-kokushibo-4572548421",
+    title: "Kokushibo Demon Slayer Illustration Mug | Black Ceramic Coffee Cup",
+    category: "mugs",
+    price: "$19.04",
+    originalPrice: "$25.39",
+    image: "assets/images/mug_kokushibo_demon_slayer.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4572548421/kokushibo-demon-slayer-illustration-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A glossy black ceramic mug that turns a quiet caffeine ritual into something cinematic. Deep purples and inky blacks swirl around an anime-inspired demon figure, eyes like knives cutting through the dark. Hold the C-shaped handle and feel the weight of the cup as steam rises—this is the kind of piece that sits naturally among sketchbooks, figurines, and LED mood lights. It carries you through late-night drawing sessions, intense anime marathons, or solitary mornings when you want focus with an edge. Durable and vivid, the print stays sharp under daily use, so the artwork remains as bold on day 100 as it was on day one."
+  },
+  {
     id: "etsy-mug-akaza-comic-4563554056",
     title: "Akaza Ceramic Mug | Anime Comic Panel 11oz",
     category: "mugs",
@@ -710,6 +775,27 @@ const etsyProducts = [
 
 // AMAZON PUBLICATIONS DATA
 const amazonBooks = [
+  {
+    id: "book-solar-system-adventure",
+    asin: "B0HJ256X92",
+    title: "The Solar System Adventure",
+    subtitle: "A Space Adventure for Kids with Tamara and Layla Exploring Planets, Stars, and the Solar System",
+    author: "Tamara Vibes",
+    description: "Blast off on an exciting space adventure through the Solar System with Tamara and Layla! Join two curious young explorers as they travel past the Moon to mighty Jupiter and beyond, discovering fascinating space facts, solving problems together, and celebrating curiosity and teamwork in a colorful comic-style story.",
+    cover: "assets/images/book_solar_system_adventure.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HJ256X92",
+    format: "Paperback / Comic-Style Illustrated Book",
+    ageRange: "Ages 6 – 12 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Imaginative & educational outer space journey through the Solar System",
+      "Fun facts about planets, stars, rockets & astronomy",
+      "Colorful comic-style illustrations designed for young readers",
+      "Highlights friendship, curiosity, imagination & teamwork"
+    ]
+  },
   {
     id: "book-matryoshka-chinese-culture",
     asin: "B0HH94WYYC",
