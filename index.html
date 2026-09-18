@@ -61,9 +61,25 @@
           <span class="theme-icon moon-icon">🌙</span>
         </button>
 
-        <a href="https://tamaravibes.etsy.com" target="_blank" rel="noopener noreferrer" class="btn btn-etsy">
-          <span class="btn-etsy-text">Shop on Etsy</span>
-        </a>
+        <!-- SHOP DROPDOWN NAVIGATION BUTTON & MENU -->
+        <div class="shop-dropdown-wrapper" id="shopDropdownWrapper">
+          <button class="shop-dropdown-btn" id="shopDropdownBtn" aria-expanded="false" aria-haspopup="true" aria-controls="shopDropdownMenu" aria-label="Open shop stores menu">
+            <span>Shop</span>
+            <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="shop-dropdown-menu" id="shopDropdownMenu" role="menu" aria-labelledby="shopDropdownBtn">
+            <a href="https://tamaravibes.etsy.com" target="_blank" rel="noopener noreferrer" class="shop-dropdown-item" role="menuitem">
+              <span class="dropdown-item-icon">🛍️</span>
+              <span class="dropdown-item-text">Shop on Etsy</span>
+            </a>
+            <a href="https://www.amazon.com/author/tamaravibes" target="_blank" rel="noopener noreferrer" class="shop-dropdown-item" role="menuitem">
+              <span class="dropdown-item-icon">📚</span>
+              <span class="dropdown-item-text">Shop on Amazon</span>
+            </a>
+          </div>
+        </div>
 
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
@@ -90,16 +106,13 @@
             </h1>
 
             <p class="hero-description">
-              Discover unique ceramic mugs, cozy graphic apparel, printable artwork, and imaginative children's storybooks designed to bring warmth and smiles to everyday life.
+              Discover unique ceramic mugs, cozy graphic apparel, printable artwork, children's books & more designed to bring warmth and smiles to everyday life.
             </p>
 
             <div class="hero-cta-group">
               <a href="#shop" class="btn btn-primary">
                 Explore the Collection
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-              <a href="https://tamaravibes.etsy.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                Shop on Etsy
               </a>
             </div>
           </div>
@@ -303,11 +316,15 @@
             </p>
             
             <p style="margin-bottom: 1rem;">
-              We create unique T-shirts, mugs, and digital products that help people express their personality, celebrate their passions, and find thoughtful gifts for every occasion.
+              We create thoughtfully designed products for everyday life, self-expression, and gifting — from T-shirts, mugs, accessories, and home decor to digital products, books, and more.
             </p>
 
-            <p style="margin-bottom: 1.25rem;">
-              Every design is carefully selected and created with attention to quality, originality, and customer satisfaction. Our mission is simple: to offer products that stand out, make people smile, and add a personal touch to everyday life.
+            <p style="margin-bottom: 1rem;">
+              Every product is carefully designed or selected with attention to quality, originality, and customer satisfaction. Our mission is simple: to offer products that stand out, make people smile, and add a personal touch to everyday life.
+            </p>
+
+            <p class="about-lead" style="font-size: 1.125rem; font-weight: 600; color: var(--clr-dark); margin-bottom: 1.25rem;">
+              Discover TamaraVibes — Bring Joy to Your Life.
             </p>
 
             <div class="about-quote">
@@ -344,7 +361,7 @@
             <a href="https://tamaravibes.etsy.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background:#fff; color: var(--clr-primary);">
               Shop on Etsy
             </a>
-            <a href="#books" class="btn btn-secondary" style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.3);">
+            <a href="https://www.amazon.com/author/tamaravibes" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.3);">
               Explore Amazon Books
             </a>
           </div>
@@ -382,7 +399,7 @@
             <span>TamaraVibes<span class="logo-dot"></span></span>
           </a>
           <p class="footer-desc">
-            A creative lifestyle brand offering graphic apparel, custom tech accessories, home decor, digital art, and imaginative books.
+            A creative lifestyle brand offering cozy apparel, mugs, home decor, digital art, children's books & more.
           </p>
           <div class="social-links" id="socialLinks">
             <!-- Dynamically Rendered via JS -->
@@ -405,17 +422,14 @@
           <h3 class="footer-title">Product Sources</h3>
           <ul class="footer-links">
             <li><a href="https://tamaravibes.etsy.com" target="_blank" rel="noopener noreferrer">Etsy Store</a></li>
-            <li><a href="#books">Amazon Books</a></li>
-            <li><a href="#shop">Mugs & Drinkware</a></li>
-            <li><a href="#shop">Apparel Collection</a></li>
-            <li><a href="#shop">Digital Printables</a></li>
+            <li><a href="https://www.amazon.com/author/tamaravibes" target="_blank" rel="noopener noreferrer">Amazon Books</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h3 class="footer-title">Brand Info & Contact</h3>
           <ul class="footer-links">
-            <li><span>📍 Hialeah, Florida, USA</span></li>
+            <li><span>📍 Florida, USA</span></li>
             <li><span>✨ Independent Creator</span></li>
             <li><span>🔒 Secure Store Links</span></li>
             <li><a href="https://wa.me/17326308588" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-link">

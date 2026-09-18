@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ensure page always starts at the top on reload
   window.scrollTo(0, 0);
 
+  // Detect Smart TV devices and isolate TV-only styles
+  detectSmartTV();
+
   // Initialize Application Components
   initNavbar();
   initThemeToggle();
@@ -29,6 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
   initQuickViewModal();
 });
 
+// Smart TV Browser Detector (Applies 'is-tv-device' class strictly to TV browsers)
+function detectSmartTV() {
+  const ua = (navigator.userAgent || navigator.vendor || window.opera || '').toLowerCase();
+  const isTV = /tv|smarttv|webos|tizen|netcast|hbbtv|androidtv|appletv|roku|vizio|bravia|playstation|xbox/i.test(ua);
+  if (isTV) {
+    document.documentElement.classList.add('is-tv-device');
+  }
+}
+
 /* ==========================================================================
    1. NAVBAR & NAVIGATION
    ========================================================================== */
@@ -37,6 +49,8 @@ function initNavbar() {
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
   const navLinks = document.querySelectorAll('.nav-link');
+  const shopDropdownBtn = document.getElementById('shopDropdownBtn');
+  const shopDropdownMenu = document.getElementById('shopDropdownMenu');
 
   // Sticky Navbar Glass Effect on Scroll
   window.addEventListener('scroll', () => {
@@ -47,23 +61,97 @@ function initNavbar() {
     }
   });
 
-  // Mobile Menu Drawer Toggle
-  if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('active');
-      mobileToggle.classList.toggle('active');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+  // Helper function to close Shop Dropdown
+  const closeShopDropdown = () => {
+    if (shopDropdownBtn && shopDropdownMenu) {
+      shopDropdownBtn.classList.remove('active');
+      shopDropdownBtn.setAttribute('aria-expanded', 'false');
+      shopDropdownMenu.classList.remove('active');
+    }
+  };
+
+  // Helper function to close Mobile Hamburger Menu
+  const closeMobileMenu = () => {
+    if (mobileToggle && navMenu) {
+      navMenu.classList.remove('active');
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+  };
+
+  // Toggle Shop Dropdown Menu
+  if (shopDropdownBtn && shopDropdownMenu) {
+    shopDropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isDropdownOpen = shopDropdownMenu.classList.contains('active');
+
+      // Always close mobile hamburger drawer when opening shop dropdown
+      closeMobileMenu();
+
+      if (isDropdownOpen) {
+        closeShopDropdown();
+      } else {
+        shopDropdownBtn.classList.add('active');
+        shopDropdownBtn.setAttribute('aria-expanded', 'true');
+        shopDropdownMenu.classList.add('active');
+      }
     });
 
-    // Close menu when clicking link
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        mobileToggle.classList.remove('active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
+    // Close dropdown when clicking a shop link item
+    const dropdownItems = shopDropdownMenu.querySelectorAll('.shop-dropdown-item');
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', () => {
+        closeShopDropdown();
       });
     });
   }
+
+  // Mobile Hamburger Drawer Toggle (Only internal links: Home, Shop, Categories, Books, About, Reviews, Contact)
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isMobileOpen = navMenu.classList.contains('active');
+
+      // Always close shop dropdown when opening mobile hamburger menu
+      closeShopDropdown();
+
+      if (isMobileOpen) {
+        closeMobileMenu();
+      } else {
+        navMenu.classList.add('active');
+        mobileToggle.classList.add('active');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Close mobile hamburger menu when clicking any internal nav link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+
+  // Close all open menus when clicking outside
+  document.addEventListener('click', (e) => {
+    const isClickInsideShop = shopDropdownBtn && (shopDropdownBtn.contains(e.target) || shopDropdownMenu.contains(e.target));
+    const isClickInsideMobile = mobileToggle && (mobileToggle.contains(e.target) || navMenu.contains(e.target));
+
+    if (!isClickInsideShop) {
+      closeShopDropdown();
+    }
+    if (!isClickInsideMobile) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menus on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeShopDropdown();
+      closeMobileMenu();
+    }
+  });
 }
 
 /* ==========================================================================
@@ -564,7 +652,7 @@ function openQuickViewModal(productId) {
 
         <p class="modal-desc">${product.description}</p>
 
-        <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
+        <div class="modal-actions-group" style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
           <a href="${product.url}" target="_blank" rel="noopener noreferrer" class="btn btn-etsy" style="padding: 0.75rem 1.5rem; font-size: 0.95rem;">
             Buy on Etsy 🛍️
           </a>

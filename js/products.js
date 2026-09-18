@@ -31,8 +31,8 @@ const brandConfig = {
   tagline: "Creative Finds. Made to Bring Joy.",
   subTagline: "Discover unique designs, thoughtful gifts and imaginative children's books from TamaraVibes.",
   etsyShopUrl: "https://tamaravibes.etsy.com",
-  amazonAuthorUrl: "https://www.amazon.com/dp/B0HBLJSJYC",
-  location: "Hialeah, Florida, USA",
+  amazonAuthorUrl: "https://www.amazon.com/author/tamaravibes",
+  location: "Florida, USA",
   yearEstablished: "2024"
 };
 
@@ -456,8 +456,8 @@ const etsyProducts = [
     id: "etsy-mug-red-spider-4563552402",
     title: "The Red Spider-man Comic Collage | Ceramic Mug",
     category: "mugs",
-    price: "$18.16",
-    originalPrice: "$24.21",
+    price: "$18.56+",
+    originalPrice: "$24.75+",
     image: "assets/images/mug_red_spider_comic_collage.jpg",
     platform: "etsy",
     url: "https://tamaravibes.etsy.com/listing/4563552402/the-red-spider-comic-collage-ceramic-mug",
@@ -469,8 +469,8 @@ const etsyProducts = [
     id: "etsy-mug-snoopy-comic-4563516003",
     title: "Snoopy Comic Strip Mug | Ceramic Coffee Cup | 11oz",
     category: "mugs",
-    price: "$18.16",
-    originalPrice: "$24.21",
+    price: "$18.88",
+    originalPrice: "$25.18",
     image: "assets/images/mug_snoopy_comic_strip.jpg",
     platform: "etsy",
     url: "https://tamaravibes.etsy.com/listing/4563516003/snoopy-comic-strip-mug-ceramic-coffee",
