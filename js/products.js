@@ -349,6 +349,19 @@ const etsyProducts = [
 
   // --- MUGS ---
   {
+    id: "etsy-mug-naruto-manga-4582617973",
+    title: "Naruto Manga Collage Mug Ceramic Mug | Anime Ninja Character",
+    category: "mugs",
+    price: "$19.17",
+    originalPrice: "$25.56",
+    image: "assets/images/mug_naruto_manga_collage.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582617973/naruto-manga-collage-mug-ceramic-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Wake up to the rush of a midnight spar with this glossy ceramic mug. A bold anime ninja portrait sits front and center, set against a high-contrast manga collage that feels like flipped-through panels come to life. Hold it by the comfortable C-handle while you brew a strong cup of coffee, settle in for a morning sketch session, or queue up the next episode. The bright, full-color print keeps its punch through daily use, while the lightweight ceramic and shiny finish make each sip feel a little more energized and focused — like you’ve carried a slice of that animated tension into your real-world routine."
+  },
+  {
     id: "etsy-mug-zenitsu-panels-4570706832",
     title: "Zenitsu Anime Manga Panels Mug | Yellow-Haired Character Comic Collage",
     category: "mugs",
@@ -477,6 +490,84 @@ const etsyProducts = [
     featured: true,
     badge: "25% OFF Sale",
     description: "Remember those slow mornings when a comic strip could change the mood of an entire day? This glossy ceramic mug brings that gentle, witty feeling to every sip. Black-and-white panels dance around the cup with small pops of color—like rediscovering a favorite comic in the newspaper—inviting quiet smiles between gulps of coffee or tea. The comfortable C-handle and smooth glossy finish sit naturally in your hand, making solo mornings, desk breaks, or lazy weekend breakfasts feel a little softer and more familiar. Durable printing keeps the panels crisp so the story stays bright through daily use. It’s the kind of mug that turns small rituals into comforting pauses."
+  },
+  {
+    id: "etsy-mug-snoopy-sketches-4582605018",
+    title: "Snoopy Sketches Mug 11oz | Ceramic Mug, Black Line Art",
+    category: "mugs",
+    price: "$18.76",
+    originalPrice: "$25.01",
+    image: "assets/images/mug_snoopy_sketches_11oz.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582605018/snoopy-sketches-mug-11oz-ceramic-mug",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Warmth in simple lines. This glossy white ceramic mug is patterned with delicate, hand-drawn dog sketches—tilted ears, soft eyes, and tiny, expressive poses that read like gentle nudges across your morning. It slips easily into a quiet routine: slow coffee at sunrise, a midday tea beside a laptop, or an evening cocoa while flipping through a paperback. The lightweight feel and comfortable C-handle make the mug effortless to cradle. The monochrome artwork keeps the mood calm and sincere, a small reminder to notice the little, heartwarming moments dogs bring into everyday life."
+  },
+  {
+    id: "etsy-mug-goku-manga-4582598993",
+    title: "Goko Manga Collage Mug | Ceramic Anime Coffee Cup, 11oz",
+    category: "mugs",
+    price: "$18.84",
+    originalPrice: "$25.12",
+    image: "assets/images/mug_goku_manga_collage_11oz.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582598993/goku-manga-collage-mug-ceramic-anime",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Sip your coffee like you’ve stepped into the climax of a favorite chapter. This glossy ceramic mug wraps a color hero — a determined warrior in full, saturated color — against a backdrop of black-and-white manga panels. Hold it and feel the hush before the next big move: focused, electric, and quietly fierce. The C-handle sits naturally in your hand while the print keeps its edge through morning reads, late-night episodes, or when you need a visual jolt on a cluttered desk. Let it sit among your figures, sketches, or pile of volumes — it belongs in the hands of someone who lives for momentum and storytelling."
+  },
+  {
+    id: "etsy-mug-spiderman-comic-art-4582607443",
+    title: "Spider-Man Comic Art Mug | Ceramic Coffee Cup 11oz",
+    category: "mugs",
+    price: "$18.22",
+    originalPrice: "$24.29",
+    image: "assets/images/mug_spiderman_comic_art_11oz.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582607443/spider-man-comic-art-mug-ceramic-coffee",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Warm-up with a nice cuppa out of this customized ceramic coffee mug. Personalize it with cool designs, photos or logos to make that \"aaahhh!\" moment even better. It’s BPA and Lead-free, microwave & dishwasher-safe, and made of white, durable ceramic in 11-ounce. Thanks to the advanced printing tech, your designs come to life with incredibly vivid colors – the perfect gift for coffee, tea, and chocolate lovers."
+  },
+  {
+    id: "etsy-mug-iron-superhero-4582623875",
+    title: "Red Armored iron Superhero man Ceramic Mug | Comic Panel Art",
+    category: "mugs",
+    price: "$18.73",
+    originalPrice: "$24.97",
+    image: "assets/images/mug_red_armored_iron_superhero.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582623875/red-armored-superhero-ceramic-mug-comic",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "This glossy ceramic mug wraps bold comic panels around a striking, red-armored superhero at the center—think rush-of-adrenaline visuals on every coffee break. Hold it by the comfortable C-handle as vibrant, high-definition inks catch the light off the shiny finish. It’s sturdy enough for daily use: lead- and BPA-free ceramic, microwave-safe for quick reheats, and dishwasher-safe for easy cleanup. Try the compact 11oz for tighter desks and short refills. For fans of classic comic-book aesthetics and armored heroes, this mug turns ordinary sips into small, heroic moments."
+  },
+  {
+    id: "etsy-mug-deadpool-comic-4582639258",
+    title: "Deadpool Comic Panel Mug | Ceramic Coffee Cup 11oz",
+    category: "mugs",
+    price: "$18.79",
+    originalPrice: "$25.05",
+    image: "assets/images/mug_deadpool_comic_panel_11oz.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582639258/deadpool-comic-panel-mug-ceramic-coffee",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "Wake up to a shot of comic-book energy. This glossy ceramic mug wraps sharp black-and-white panels around a bold, red antihero at the center, bringing cafe humor and graphic-novel attitude to your morning routine. The sturdy C-handle and shiny finish make each sip feel a little louder and more confident. It’s the kind of mug that sits on your desk, starts conversations, and adds a playful, rebellious note to coffee breaks or late-night sketch sessions."
+  },
+  {
+    id: "etsy-mug-starry-night-cityscape-4582655770",
+    title: "Starry Night Cityscape Mug - Van Gogh | Black Ceramic Coffee Mug",
+    category: "mugs",
+    price: "$19.83",
+    originalPrice: "$26.44",
+    image: "assets/images/mug_starry_night_cityscape_van_gogh_black.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4582655770/starry-night-cityscape-mug-van-gogh",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "This black ceramic mug brings a little evening magic to your daily ritual. Deep glossy black surrounds a swirling, starry-night cityscape that looks hand-painted—rich indigos, luminous golds, and painterly brushstrokes wrap the mug so each sip feels like stepping onto a quiet riverside promenade beneath a brooding, starlit sky. It’s made to live on your desk or kitchen counter, catching eyes and starting conversations while holding up to everyday use. Warm coffee or tea, tilt the mug, and watch the lights shimmer across the skyline—an elegant, artful pause in a busy day."
   },
   {
     id: "etsy-mug-no-internet-dino-4555781859",
