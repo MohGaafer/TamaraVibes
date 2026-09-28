@@ -867,6 +867,69 @@ const etsyProducts = [
 // AMAZON PUBLICATIONS DATA
 const amazonBooks = [
   {
+    id: "book-tamara-door-thousand-worlds",
+    asin: "B0HL5Z1P8J",
+    title: "Tamara and the Door of a Thousand Worlds",
+    subtitle: "A Magical Adventure Through Candy, Dinosaurs, Toys, Space, and Underwater Worlds",
+    author: "Tamara Vibes",
+    description: "What would you do if one mysterious door could take you anywhere? When curious little Tamara discovers a magical door hidden behind her bookshelf, she steps into an unforgettable journey filled with candy castles, friendly dinosaurs, giant toys, sparkling planets, and underwater wonder. Along the way, she learns that courage, kindness, curiosity, and imagination can open doors that seem impossible to unlock.",
+    cover: "assets/images/book_tamara_door_thousand_worlds.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HL5Z1P8J",
+    format: "Paperback / Illustrated Storybook",
+    ageRange: "Ages 4 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Magical fantasy adventure exploring candy, dinosaur, toy & space realms",
+      "Encourages curiosity, imagination, courage & kindness in children",
+      "Richly detailed, colorful storybook illustrations",
+      "Heartwarming mystery story for children ages 4 to 8"
+    ]
+  },
+  {
+    id: "book-starry-night-notebook",
+    asin: "B0HL4YDC37",
+    title: "Starry Night Notebook",
+    subtitle: "Large Lined Journal for Writing, Notes, Ideas & Everyday Thoughts",
+    author: "Tamara Vibes",
+    description: "Bring your thoughts, ideas, plans, and everyday notes to life in this beautifully illustrated Starry Night inspired notebook. Designed with a dreamy, swirling night-sky aesthetic, glowing stars, rolling blue hills, and a peaceful village scene, this large lined journal offers a comfortable space for writing, journaling, brainstorming, and daily note-taking with 100 lined pages in a spacious 8.5 x 11 inch format.",
+    cover: "assets/images/book_starry_night_notebook.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HL4YDC37",
+    format: "Paperback / Lined Journal",
+    ageRange: "Ages 8+ Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Dreamy Van Gogh inspired Starry Night cover aesthetic",
+      "100 lined pages in a spacious 8.5 x 11 inch format",
+      "Ideal for daily journaling, notes, creative brainstorming & planning",
+      "Versatile lined notebook for students, writers & everyday thoughts"
+    ]
+  },
+  {
+    id: "book-tamara-secret-deep-blue-sea",
+    asin: "B0HL8CY6N2",
+    title: "Tamara and the Secret of the Deep Blue Sea",
+    subtitle: "An Underwater Adventure of Discovery and Wonder",
+    author: "Tamara Vibes",
+    description: "Dive into a magical underwater adventure with Tamara as she discovers the secrets of the deep blue sea! When Tamara notices a mysterious blue glow beneath the waves, curiosity leads her on an unforgettable journey through coral reefs, playful dolphins, sea turtles, seahorses, octopuses, manta rays, and glowing deep-sea creatures. Along the way, she learns that the ocean is a living world with delicate ecosystems that deserve care and protection.",
+    cover: "assets/images/book_tamara_secret_deep_blue_sea.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HL8CY6N2",
+    format: "Paperback / Illustrated Book",
+    ageRange: "Ages 4 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Magical underwater adventure discovering the secrets of the deep blue sea",
+      "Features dolphins, sea turtles, seahorses, octopuses, manta rays & coral reefs",
+      "Teaches marine life appreciation & caring for ocean ecosystems",
+      "Heartwarming, beautifully illustrated storybook for children ages 4 to 8"
+    ]
+  },
+  {
     id: "book-solar-system-adventure",
     asin: "B0HJ256X92",
     title: "The Solar System Adventure",
