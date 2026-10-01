@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCustomerReviews();
   renderSocialLinks();
   initSearch();
+  initBookSearch();
   initScrollObserver();
   initNewsletterForm();
   initMouseSparkles();
@@ -225,6 +226,25 @@ function initSearch() {
   });
 }
 
+let bookSearchQuery = '';
+
+function initBookSearch() {
+  const input = document.getElementById('bookSearchInput');
+  if (!input) return;
+
+  input.addEventListener('input', (e) => {
+    bookSearchQuery = e.target.value.toLowerCase().trim();
+    renderAmazonBooks();
+  });
+}
+
+function clearBookSearch() {
+  bookSearchQuery = '';
+  const input = document.getElementById('bookSearchInput');
+  if (input) input.value = '';
+  renderAmazonBooks();
+}
+
 /* ==========================================================================
    4. PRODUCTS RENDERER (ETSY & COMBINED)
    ========================================================================== */
@@ -298,7 +318,28 @@ function renderAmazonBooks() {
   const container = document.getElementById('booksGrid');
   if (!container || typeof amazonBooks === 'undefined') return;
 
-  container.innerHTML = amazonBooks.map(book => `
+  const filteredBooks = amazonBooks.filter(book => {
+    if (!bookSearchQuery) return true;
+    const titleMatch = book.title ? book.title.toLowerCase().includes(bookSearchQuery) : false;
+    const subtitleMatch = book.subtitle ? book.subtitle.toLowerCase().includes(bookSearchQuery) : false;
+    const descMatch = book.description ? book.description.toLowerCase().includes(bookSearchQuery) : false;
+    const ageMatch = book.ageRange ? book.ageRange.toLowerCase().includes(bookSearchQuery) : false;
+    const highlightsMatch = book.highlights ? book.highlights.some(h => h.toLowerCase().includes(bookSearchQuery)) : false;
+    return titleMatch || subtitleMatch || descMatch || ageMatch || highlightsMatch;
+  });
+
+  if (filteredBooks.length === 0) {
+    container.innerHTML = `
+      <div class="no-results reveal" style="grid-column: 1 / -1; text-align: center; padding: 3.5rem 1rem;">
+        <h3>No matching books found</h3>
+        <p style="color: var(--clr-text-muted); margin-top: 0.5rem;">Try adjusting your search terms or book titles.</p>
+        <button onclick="clearBookSearch()" class="btn btn-secondary" style="margin-top: 1.25rem;">View All Books</button>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = filteredBooks.map(book => `
     <article class="book-card-3d reveal">
       <div class="book-cover-container">
         <img src="${book.cover}" alt="${book.title} cover by Tamara Vibes" class="book-cover-3d" loading="lazy" width="220" height="290">
@@ -323,6 +364,8 @@ function renderAmazonBooks() {
       </div>
     </article>
   `).join('');
+
+  initScrollObserver();
 }
 
 /* ==========================================================================

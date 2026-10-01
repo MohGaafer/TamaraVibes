@@ -1189,15 +1189,22 @@ ul {
   border-radius: var(--radius-full);
   border: 1px solid rgba(30, 25, 38, 0.12);
   background-color: var(--clr-card-bg);
+  color: var(--clr-dark);
   font-size: 0.95rem;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
+}
+
+.search-input::placeholder {
+  color: var(--clr-text-muted);
+  opacity: 0.85;
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--clr-primary);
   box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.15);
+  color: var(--clr-dark);
 }
 
 .search-icon {
@@ -1207,6 +1214,36 @@ ul {
   transform: translateY(-50%);
   color: var(--clr-text-light);
   pointer-events: none;
+}
+
+.books-search-bar {
+  max-width: 520px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.books-search-bar .search-input {
+  background-color: #ffffff;
+  color: #1E1926 !important;
+  border: 1.5px solid rgba(255, 153, 0, 0.4);
+  font-weight: 400;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.books-search-bar .search-input::placeholder {
+  color: #6C6675;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.books-search-bar .search-icon {
+  color: #FF9900;
+}
+
+.books-search-bar .search-input:focus {
+  background-color: #ffffff;
+  border-color: #FF9900;
+  box-shadow: 0 0 0 4px rgba(255, 153, 0, 0.3);
+  color: #1E1926 !important;
 }
 
 .filter-tabs {
@@ -3490,7 +3527,27 @@ model-viewer {
   }
 }
 
-/* Dark Mode Adaptation for 3D Viewer */
+/* Dark Mode Adaptation for 3D Viewer & Search Inputs */
+[data-theme="dark"] .search-input {
+  background-color: #262030;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .search-input::placeholder {
+  color: #A39BAE;
+}
+
+[data-theme="dark"] .books-search-bar .search-input {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff !important;
+  border-color: rgba(255, 153, 0, 0.5);
+}
+
+[data-theme="dark"] .books-search-bar .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
 [data-theme="dark"] .viewer-3d-card {
   background-color: #1E1926;
   border-color: rgba(217, 119, 87, 0.35);
@@ -3600,6 +3657,16 @@ model-viewer {
 
 .is-tv-device .modal-actions-group > * + * {
   margin-left: 1rem !important;
+}
+
+/* Shop Section Search Bar & Category Filter Buttons Spacing on Smart TV */
+.is-tv-device .filter-search-bar {
+  gap: 2rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.is-tv-device .filter-search-bar .search-input-wrapper {
+  margin-bottom: 0.75rem !important; /* Fallback for older TV browsers without flex gap */
 }
 
 
