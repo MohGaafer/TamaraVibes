@@ -70,7 +70,7 @@ const categories = [
     id: "sweatshirts",
     name: "Sweatshirts",
     description: "Cozy fleece-lined crewnecks & hoodies designed for warmth and style.",
-    image: "assets/images/sweatshirt_nezuko.jpg",
+    image: "assets/images/cat_sweatshirts.jpg",
     icon: "layers"
   },
   {
@@ -100,56 +100,17 @@ const categories = [
 const etsyProducts = [
   // --- T-SHIRTS ---
   {
-    id: "etsy-tshirt-arabic-sarcastic-4555791893",
-    title: "Arabic Typography T-Shirt, Sarcastic Statement Tee, Middle Eastern Streetwear",
+    id: "etsy-tshirt-akaza-4373682383",
+    title: "Akaza Fan Art T-Shirt",
     category: "tshirts",
-    price: "$23.62+",
-    originalPrice: "$31.49+",
-    image: "assets/images/tshirt_arabic_sarcastic_statement.jpg",
+    price: "$23.48+",
+    originalPrice: "$31.31+",
+    image: "assets/images/tshirt_akaza_fan_art.jpg",
     platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555791893/arabic-quote-t-shirt-funny-arabic",
+    url: "https://tamaravibes.etsy.com/listing/4373682383/akaza-fan-art-t-shirt-demon-slayer-anime",
     featured: true,
     badge: "25% OFF Sale",
-    description: "A bold and clever Arabic statement T-shirt featuring expressive Arabic typography and a playful word combination. The phrase translates roughly to “Tied with an elastic among plastic people” — a sarcastic and witty expression about staying yourself while surrounded by fake or superficial people. The bold Arabic lettering gives this shirt a distinctive artistic look, making it a great choice for anyone who loves unique typography, cultural designs, and statement streetwear."
-  },
-  {
-    id: "etsy-tshirt-arabic-quote-4555815192",
-    title: "Arabic Calligraphy Hope Quote T-Shirt, Middle Eastern Typography Tee",
-    category: "tshirts",
-    price: "$22.67+",
-    originalPrice: "$30.23+",
-    image: "assets/images/tshirt_arabic_hope_quote.jpg",
-    platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555815192/arabic-quote-t-shirt-arabic-calligraphy",
-    featured: true,
-    badge: "25% OFF Sale",
-    description: "“ما ضاقت إلا لتفرج”\n\nA meaningful Arabic quote beautifully presented in bold artistic typography. The phrase can be translated as “Hardship comes before relief” or “When things become difficult, relief will follow.” It carries a message of hope, patience, and perseverance — a reminder that difficult moments do not last forever and that better days can come after hardship. The expressive Arabic typography makes this more than just a T-shirt; it is a wearable message of hope with a distinctive Middle Eastern artistic aesthetic."
-  },
-  {
-    id: "etsy-tshirt-arabic-poetry-4555819896",
-    title: "Arabic Calligraphy T-Shirt, Hope Poetry Typography Tee",
-    category: "tshirts",
-    price: "$24.10+",
-    originalPrice: "$32.14+",
-    image: "assets/images/tshirt_arabic_calligraphy_poetry.jpg",
-    platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555819896/arabic-poetry-t-shirt-arabic-calligraphy",
-    featured: true,
-    badge: "25% OFF Sale",
-    description: "“ضاقت فلما استحكمت حلقاتها فرجت”\n\nA powerful Arabic poetic expression transformed into a striking piece of wearable typography. The verse means approximately: “Things became unbearably tight, and when the hardship reached its peak, relief came.” It is a timeless message about hope, perseverance, and finding relief after difficult times. The bold Arabic calligraphy gives the shirt an artistic and literary character, making it especially appealing to people who appreciate Arabic poetry, typography, calligraphy, and Middle Eastern visual culture."
-  },
-  {
-    id: "etsy-tshirt-egyptian-goddess-4555885127",
-    title: "Egyptian Goddess T-Shirt, Ancient Egypt Art Tee, Mythology Pharaoh Style Shirt",
-    category: "tshirts",
-    price: "$23.62+",
-    originalPrice: "$31.49+",
-    image: "assets/images/tshirt_egyptian_goddess.jpg",
-    platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555885127/egyptian-goddess-t-shirt-ancient-egypt",
-    featured: true,
-    badge: "25% OFF Sale",
-    description: "Step into the timeless beauty and mystery of Ancient Egypt with this elegant Egyptian-inspired T-shirt. Featuring a striking golden illustration of a regal Egyptian female figure surrounded by wings, celestial symbols, and ornamental details, this design combines ancient Egyptian aesthetics with a modern artistic style. A beautiful statement piece for anyone fascinated by Egyptian history, mythology, symbolism, and ancient civilizations."
+    description: "This T-Shirt features beautiful Akaza fan art from the Demon Slayer anime, perfect for fans of the series. The unisex softstyle design ensures a comfortable fit and a versatile style that can be worn on any occasion. Ideal for adults and those who appreciate unique anime-inspired apparel. Great for gifting during birthdays, holidays, or anime conventions."
   },
   {
     id: "etsy-tshirt-egyptian-falcon-4555904414",
@@ -165,32 +126,6 @@ const etsyProducts = [
     description: "Bring the powerful symbolism of Ancient Egypt to your wardrobe with this striking Egyptian falcon T-shirt. The design features a dramatic black and gold falcon-inspired figure surrounded by ancient Egyptian symbols, celestial elements, and an Eye of Horus-inspired motif. Inspired by the powerful imagery associated with Horus and ancient Egyptian falcon symbolism, this shirt is perfect for anyone drawn to Egyptian mythology, history, and ancient art."
   },
   {
-    id: "etsy-tshirt-eye-of-horus-4555911863",
-    title: "Eye of Horus T Shirt, Winged Egyptian Symbol Tee, Ancient Egypt Mythology Art",
-    category: "tshirts",
-    price: "$23.62+",
-    originalPrice: "$31.49+",
-    image: "assets/images/tshirt_eye_of_horus.jpg",
-    platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555911863/eye-of-horus-t-shirt-egyptian-symbol",
-    featured: true,
-    badge: "25% OFF Sale",
-    description: "A powerful interpretation of one of the most recognizable symbols associated with Ancient Egypt. This artistic design combines the Eye of Horus-inspired symbol with expansive wings, radiant sun-like details, and elegant golden linework to create a bold mystical aesthetic. Perfect for anyone fascinated by Egyptian symbolism, ancient mythology, sacred art, and the visual language of Ancient Egypt."
-  },
-  {
-    id: "etsy-tshirt-egyptian-sun-4555917227",
-    title: "Egyptian Pyramid Sunset T-Shirt, Ancient Art Landscape Tee",
-    category: "tshirts",
-    price: "$23.62+",
-    originalPrice: "$31.49+",
-    image: "assets/images/tshirt_egyptian_pyramid_sunset.jpg",
-    platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4555917227/egyptian-sun-t-shirt-pyramid-sunset",
-    featured: true,
-    badge: "25% OFF Sale",
-    description: "A dreamy interpretation of the Egyptian landscape featuring a glowing sun rising or setting behind a pyramid, surrounded by intricate celestial and ornamental details. The circular composition combines pyramid imagery, golden sunlight, and Ancient Egyptian-inspired artwork to create a mystical and artistic statement design. A great choice for anyone fascinated by Egypt, pyramids, ancient civilizations, desert landscapes, and timeless Egyptian aesthetics."
-  },
-  {
     id: "etsy-tshirt-zenitsu-4372921118",
     title: "Zenitsu Demon Slayer T-Shirt",
     category: "tshirts",
@@ -202,6 +137,32 @@ const etsyProducts = [
     featured: true,
     badge: "25% OFF Sale",
     description: "This Zenitsu themed T-shirt is perfect for Demon Slayer and manga fans. It exudes a casual and relaxed vibe, making it ideal for everyday wear or lounging around. A great gift for anime lovers, otakus, and Demon Slayer enthusiasts. Relevant for birthdays, anime conventions, or simply celebrating your love for Japanese culture."
+  },
+  {
+    id: "etsy-tshirt-arabic-sarcastic-4555791893",
+    title: "Arabic Typography T-Shirt, Sarcastic Statement Tee, Middle Eastern Streetwear",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_arabic_sarcastic_statement.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555791893/arabic-quote-t-shirt-funny-arabic",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A bold and clever Arabic statement T-shirt featuring expressive Arabic typography and a playful word combination. The phrase translates roughly to “Tied with an elastic among plastic people” — a sarcastic and witty expression about staying yourself while surrounded by fake or superficial people. The bold Arabic lettering gives this shirt a distinctive artistic look, making it a great choice for anyone who loves unique typography, cultural designs, and statement streetwear."
+  },
+  {
+    id: "etsy-tshirt-eye-of-horus-4555911863",
+    title: "Eye of Horus T Shirt, Winged Egyptian Symbol Tee, Ancient Egypt Mythology Art",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_eye_of_horus.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555911863/eye-of-horus-t-shirt-egyptian-symbol",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A powerful interpretation of one of the most recognizable symbols associated with Ancient Egypt. This artistic design combines the Eye of Horus-inspired symbol with expansive wings, radiant sun-like details, and elegant golden linework to create a bold mystical aesthetic. Perfect for anyone fascinated by Egyptian symbolism, ancient mythology, sacred art, and the visual language of Ancient Egypt."
   },
   {
     id: "etsy-tshirt-father-daughter-4541512753",
@@ -217,17 +178,56 @@ const etsyProducts = [
     description: "Some moments last forever. This original minimalist line art design captures one of the most meaningful moments between a father and his daughter—the instant she runs into his open arms. Inspired by real family love, this artwork symbolizes a bond that never fades. As children grow, they may outgrow their father’s arms, but they never outgrow his heart. Designed with clean, timeless lines, this shirt is perfect for fathers who cherish every hug, every memory, and every moment."
   },
   {
-    id: "etsy-tshirt-akaza-4373682383",
-    title: "Akaza Fan Art T-Shirt",
+    id: "etsy-tshirt-egyptian-goddess-4555885127",
+    title: "Egyptian Goddess T-Shirt, Ancient Egypt Art Tee, Mythology Pharaoh Style Shirt",
     category: "tshirts",
-    price: "$23.48+",
-    originalPrice: "$31.31+",
-    image: "assets/images/tshirt_akaza_fan_art.jpg",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_egyptian_goddess.jpg",
     platform: "etsy",
-    url: "https://tamaravibes.etsy.com/listing/4373682383/akaza-fan-art-t-shirt-demon-slayer-anime",
+    url: "https://tamaravibes.etsy.com/listing/4555885127/egyptian-goddess-t-shirt-ancient-egypt",
     featured: true,
     badge: "25% OFF Sale",
-    description: "This T-Shirt features beautiful Akaza fan art from the Demon Slayer anime, perfect for fans of the series. The unisex softstyle design ensures a comfortable fit and a versatile style that can be worn on any occasion. Ideal for adults and those who appreciate unique anime-inspired apparel. Great for gifting during birthdays, holidays, or anime conventions."
+    description: "Step into the timeless beauty and mystery of Ancient Egypt with this elegant Egyptian-inspired T-shirt. Featuring a striking golden illustration of a regal Egyptian female figure surrounded by wings, celestial symbols, and ornamental details, this design combines ancient Egyptian aesthetics with a modern artistic style. A beautiful statement piece for anyone fascinated by Egyptian history, mythology, symbolism, and ancient civilizations."
+  },
+  {
+    id: "etsy-tshirt-arabic-quote-4555815192",
+    title: "Arabic Calligraphy Hope Quote T-Shirt, Middle Eastern Typography Tee",
+    category: "tshirts",
+    price: "$22.67+",
+    originalPrice: "$30.23+",
+    image: "assets/images/tshirt_arabic_hope_quote.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555815192/arabic-quote-t-shirt-arabic-calligraphy",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "“ما ضاقت إلا لتفرج”\n\nA meaningful Arabic quote beautifully presented in bold artistic typography. The phrase can be translated as “Hardship comes before relief” or “When things become difficult, relief will follow.” It carries a message of hope, patience, and perseverance — a reminder that difficult moments do not last forever and that better days can come after hardship. The expressive Arabic typography makes this more than just a T-shirt; it is a wearable message of hope with a distinctive Middle Eastern artistic aesthetic."
+  },
+  {
+    id: "etsy-tshirt-egyptian-sun-4555917227",
+    title: "Egyptian Pyramid Sunset T-Shirt, Ancient Art Landscape Tee",
+    category: "tshirts",
+    price: "$23.62+",
+    originalPrice: "$31.49+",
+    image: "assets/images/tshirt_egyptian_pyramid_sunset.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555917227/egyptian-sun-t-shirt-pyramid-sunset",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "A dreamy interpretation of the Egyptian landscape featuring a glowing sun rising or setting behind a pyramid, surrounded by intricate celestial and ornamental details. The circular composition combines pyramid imagery, golden sunlight, and Ancient Egyptian-inspired artwork to create a mystical and artistic statement design. A great choice for anyone fascinated by Egypt, pyramids, ancient civilizations, desert landscapes, and timeless Egyptian aesthetics."
+  },
+  {
+    id: "etsy-tshirt-arabic-poetry-4555819896",
+    title: "Arabic Calligraphy T-Shirt, Hope Poetry Typography Tee",
+    category: "tshirts",
+    price: "$24.10+",
+    originalPrice: "$32.14+",
+    image: "assets/images/tshirt_arabic_calligraphy_poetry.jpg",
+    platform: "etsy",
+    url: "https://tamaravibes.etsy.com/listing/4555819896/arabic-poetry-t-shirt-arabic-calligraphy",
+    featured: true,
+    badge: "25% OFF Sale",
+    description: "“ضاقت فلما استحكمت حلقاتها فرجت”\n\nA powerful Arabic poetic expression transformed into a striking piece of wearable typography. The verse means approximately: “Things became unbearably tight, and when the hardship reached its peak, relief came.” It is a timeless message about hope, perseverance, and finding relief after difficult times. The bold Arabic calligraphy gives the shirt an artistic and literary character, making it especially appealing to people who appreciate Arabic poetry, typography, calligraphy, and Middle Eastern visual culture."
   },
   {
     id: "etsy-tshirt-zenitsu-attack-4374505614",
@@ -867,6 +867,48 @@ const etsyProducts = [
 // AMAZON PUBLICATIONS DATA
 const amazonBooks = [
   {
+    id: "book-tamara-mystery-magic-forest",
+    asin: "B0HLLKNVXW",
+    title: "Tamara and the Mystery of the Magic Forest",
+    subtitle: "A Magical Adventure of Puzzles, Friendship, Teamwork, and Kindness",
+    author: "Tamara Vibes",
+    description: "When Tamara discovers a glowing golden leaf in her grandmother's garden, she enters a magical forest filled with talking animals, secret paths, and an ancient Heart Tree losing its light. Joined by a friendly fox and a clever owl, Tamara follows clues, solves fun challenges, and learns that problem-solving, teamwork, kindness, and caring for nature are the greatest treasures of all.",
+    cover: "assets/images/book_tamara_mystery_magic_forest.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HLLKNVXW",
+    format: "Paperback / Illustrated Storybook",
+    ageRange: "Ages 4 – 8 Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "Heartwarming forest adventure featuring puzzles, counting & patterns",
+      "Teaches teamwork, problem-solving, empathy & environmental care",
+      "Features charming animal companions Fox & Oliver the Owl",
+      "Richly illustrated mystery storybook for children ages 4 to 8"
+    ]
+  },
+  {
+    id: "book-cozy-girl-life",
+    asin: "B0HLL7QRLH",
+    title: "Cozy Girl Life",
+    subtitle: "A Cozy Coloring Book for Teens and Adults with Relaxing Everyday Scenes",
+    author: "Tamara Vibes",
+    description: "Step into a world of cozy moments, peaceful spaces, and everyday little joys with Cozy Girl Life, a relaxing coloring book created for teens and adults. Discover 39 unique cozy-themed illustrations featuring quiet bedrooms, coffee rituals, cute cafés, baking, self-care, flowers, pets, and peaceful evenings at home designed with clean, bold line art in a spacious 8.5 x 11 inch format.",
+    cover: "assets/images/book_cozy_girl_life.jpg",
+    platform: "amazon",
+    url: "https://www.amazon.com/dp/B0HLL7QRLH",
+    format: "Paperback / Coloring Book",
+    ageRange: "Ages 4+ Years",
+    featured: true,
+    badge: "Amazon Publication",
+    highlights: [
+      "39 unique cozy-themed coloring pages for teens and adults",
+      "Features coffee rituals, quiet rooms, cafés, baking, flowers & cute pets",
+      "Clean, bold black line art designed for easy & relaxing coloring",
+      "Single-sided 8.5 x 11 inch pages to prevent bleed-through"
+    ]
+  },
+  {
     id: "book-tamara-door-thousand-worlds",
     asin: "B0HL5Z1P8J",
     title: "Tamara and the Door of a Thousand Worlds",
@@ -1220,6 +1262,7 @@ const socialLinks = {
   threads: "https://www.threads.com/@tamtama.vibes",
   pinterest: "https://www.pinterest.com/tamaravibes",
   instagram: "https://www.instagram.com/tamtama.vibes",
-  youtube: "https://www.youtube.com/@Tamara-Vibes",
-  whatsapp: "https://wa.me/17326308588"
+  x: "https://x.com/tamara_vibes",
+  tiktok: "https://www.tiktok.com/@tamtamvibes",
+  youtube: "https://www.youtube.com/@Tamara-Vibes"
 };
