@@ -2656,22 +2656,13 @@ ul {
   }
 
   .category-img-wrapper {
-    height: 220px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-color: var(--clr-bg-alt);
   }
 
-  .category-card-tshirts .category-img-wrapper img,
-  .category-card[data-category="tshirts"] .category-img-wrapper img {
-    object-position: 50% 4%;
-  }
-
-  .category-card-sweatshirts .category-img-wrapper img,
-  .category-card[data-category="sweatshirts"] .category-img-wrapper img {
-    object-position: 50% 8%;
-  }
-
-  .category-card-homedecor .category-img-wrapper img,
-  .category-card[data-category="homedecor"] .category-img-wrapper img {
-    object-position: 50% 15%;
+  .category-img-wrapper img {
+    object-position: center center !important;
   }
 
   /* Centered 2-Column Mobile Footer Layout */
@@ -2764,7 +2755,9 @@ ul {
   }
 
   .category-img-wrapper {
-    height: 235px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-color: var(--clr-bg-alt);
   }
 
   .category-body {
@@ -2775,9 +2768,8 @@ ul {
     font-size: 1.15rem;
   }
 
-  .category-card-tshirts .category-img-wrapper img,
-  .category-card[data-category="tshirts"] .category-img-wrapper img {
-    object-position: 50% 2%;
+  .category-img-wrapper img {
+    object-position: center center !important;
   }
   .brand-logo {
     font-size: 1rem;
